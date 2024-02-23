@@ -25,6 +25,7 @@ h6 {
   font-family: 'Open Sans';
   font-weight: 800;
 }
+
 a {
   color: #404040;
 }
@@ -393,3 +394,4 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #0085a1;
 }
+
