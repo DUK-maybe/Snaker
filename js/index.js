@@ -48,6 +48,9 @@ function find(){
         dict_but.setAttribute("href",dictionary.Bungarus_fasciatus.link)
         image.setAttribute("src",dictionary.Bungarus_fasciatus.img)
         div2.appendChild(dict)
+        // const desc = document.createElement("p")
+        // desc.innerHTML="Nhấn vào ảnh để biết thêm chi tiết"
+        // div2.appendChild(desc)
     } 
     if (dictionary.Ophiophagus_hannah.color.includes(inputColor.value.toLowerCase()) && (Number(lengthInput.value)>=dictionary.Ophiophagus_hannah.length[0] || Number(lengthInput2.value)<=dictionary.Ophiophagus_hannah.length[1])){
         const dict = document.createElement("div")
@@ -69,5 +72,10 @@ function find(){
         dict_but.setAttribute("href",dictionary.Ophiophagus_hannah.link)
         image.setAttribute("src",dictionary.Ophiophagus_hannah.img)
         div2.appendChild(dict)
+        
     }
+    const div3 = document.getElementById("afterInsert")
+    const desc = document.createElement("p")
+    desc.innerHTML="Nhấn vào ảnh để biết thêm chi tiết"
+    div3.appendChild(desc)
 }
