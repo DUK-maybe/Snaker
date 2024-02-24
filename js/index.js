@@ -7,6 +7,7 @@ const dictionary = {
         name:"Bungarus fasciatus"
     }
 }
+//have to fixed later
 function find(){
     const inputColor = document.getElementById("color")
     const lengthInput = document.getElementById("length")
