@@ -398,7 +398,7 @@ body {
 .dictionary{
   display: inline-grid;
   text-align: center;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
 }
 .dictionary > div{
   margin: 10px;
@@ -463,4 +463,75 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 768px) {
+  .dictionary{
+    display: inline-grid;
+    text-align: center;
+    grid-template-columns: auto auto;
+  }
+  .dictionary > div{
+    margin: 10px;
+    
+    /* border: 1px solid black; */
+    border-radius:15px ;
+  }
+  .dict_but:link{
+    text-decoration: none;
+  }
+  .dict_but:hover{
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .dict_but:visited{
+    text-decoration: none;
+  }
+  .dict_but:active{
+    text-decoration: none;
+  }
+  .dict{
+    position: relative;
+    
+  }
+  img {
+    border-radius: 20px;
+    padding: 5px;
+    /* width: 350px;
+    height: 100px; */
+    width: 100%;
+    height: 100%;
+  }
+  .image {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+  }
+  
+  .overlay {
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    /* background-color: #008CBA; */
+    backdrop-filter: blur(5px);
+  }
+  .dict:hover .overlay{
+    
+    opacity: 1;
+  }
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
 }
