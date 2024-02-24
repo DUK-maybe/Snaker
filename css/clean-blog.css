@@ -468,7 +468,7 @@ img {
   .dictionary{
     display: inline-grid;
     text-align: center;
-    grid-template-columns: auto auto;
+    
   }
   .dictionary > div{
     margin: 10px;
