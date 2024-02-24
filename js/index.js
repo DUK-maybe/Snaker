@@ -2,8 +2,8 @@ const dictionary = {
     Bungarus_fasciatus:{
         length:["2 mét","2m","2 meters","khoảng 2 mét"],
         color:["vàng sọc đen","vàng kèm đen","vàng","kem"],
-        link:"Bungarus_fasciatus.html",
-        img:"img/Bungarus_fasciatus.jpg",
+        link:"./Bungarus_fasciatus.html",
+        img:"./img/Bungarus_fasciatus.jpg",
         name:"Bungarus fasciatus"
     }
 }
